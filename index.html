@@ -1,0 +1,219 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lava Jato Pak Aldenice</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+header{
+background:#0f172a;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+}
+
+.slider{
+height:500px;
+overflow:hidden;
+position:relative;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+opacity:0;
+animation:slide 15s infinite;
+}
+
+.slide:nth-child(1){
+background-image:url('https://images.unsplash.com/photo-1607861716497-e65ab29fc7ac');
+}
+
+.slide:nth-child(2){
+background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+animation-delay:5s;
+}
+
+.slide:nth-child(3){
+background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7');
+animation-delay:10s;
+}
+
+@keyframes slide{
+0%{opacity:0;}
+10%{opacity:1;}
+30%{opacity:1;}
+40%{opacity:0;}
+100%{opacity:0;}
+}
+
+.hero{
+padding:70px 20px;
+background:white;
+text-align:center;
+}
+
+.hero h2{
+margin-bottom:15px;
+color:#0f172a;
+}
+
+.servicos{
+padding:60px 20px;
+}
+
+.servicos h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+width:280px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.contato{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.btn{
+display:inline-block;
+background:#22c55e;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:8px;
+margin-top:15px;
+}
+
+footer{
+background:#020617;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+@media(max-width:768px){
+.cards{
+flex-direction:column;
+align-items:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Lava Jato Pak Aldenice</h1>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section class="slider">
+<div class="slide"></div>
+<div class="slide"></div>
+<div class="slide"></div>
+</section>
+
+<section class="hero" id="sobre">
+<h2>Seu carro limpo, brilhando e protegido</h2>
+
+<p>
+Lavagem completa, higienização interna,
+enceramento, limpeza de bancos e cuidados
+especiais para manter seu veículo impecável.
+</p>
+</section>
+
+<section class="servicos" id="servicos">
+
+<h2>Nossos Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Lavagem Simples</h3>
+<p>Limpeza externa completa do veículo.</p>
+</div>
+
+<div class="card">
+<h3>Lavagem Completa</h3>
+<p>Parte externa e interna detalhada.</p>
+</div>
+
+<div class="card">
+<h3>Higienização</h3>
+<p>Limpeza profunda dos bancos e interior.</p>
+</div>
+
+<div class="card">
+<h3>Enceramento</h3>
+<p>Proteção e brilho para a pintura.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contato" id="contato">
+
+<h2>Fale Conosco</h2>
+
+<p>Lava Jato Pak Aldenice</p>
+
+<p>Atendimento rápido e de qualidade.</p>
+
+<a href="https://wa.me/5500000000000" class="btn">
+Chamar no WhatsApp
+</a>
+
+</section>
+
+<footer>
+© 2026 Lava Jato Pak Aldenice - Todos os Direitos Reservados
+</footer>
+
+</body>
+</html>
+```
